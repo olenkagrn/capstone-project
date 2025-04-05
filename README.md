@@ -28,13 +28,6 @@ After that, you can simply start this project like this:
 - npm run start
 
 -- THIRD STEP --
-You need to compile Sass into CSS, just use:
-
-- npm run compile
-
-Or you can automatically watch for changes:
-
-- npm run watch
 
 🧹 Code Quality & Linting
 The project uses ESLint for JavaScript and Stylelint for SCSS to maintain clean and consistent code.
