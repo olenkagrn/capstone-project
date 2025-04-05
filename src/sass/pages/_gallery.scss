@@ -123,20 +123,6 @@
   }
 }
 
-.gallery-card-btn:link,
-.gallery-card-btn:visited {
-  display: none;
-
-  @include mixins.abs-center;
-
-  color: inherit;
-  text-decoration: none;
-  font-size: 2.4rem;
-  border: variables.$white-solid-stroke;
-  padding: 1rem 0.6rem;
-  backdrop-filter: blur(5px);
-}
-
 .gallery-card-details {
   padding: 2.4rem 1.6rem;
   display: grid;

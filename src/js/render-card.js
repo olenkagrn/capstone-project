@@ -15,7 +15,6 @@ export function createCard({ image: { src }, details }) {
   card.innerHTML = `
     <figure class="gallery-card-img">
       <img src="${src}" alt="${title}" />
-      <a class="gallery-card-btn" href="#">Show More</a>
     </figure>
 
     <div class="gallery-card-details">
