@@ -86,9 +86,11 @@ sortDirectionSelect.addEventListener("change", applyFilters);
 
 async function applyFilters() {
   const properties = await fetchCardsInfo();
+  currentPage = 1;
+
   const filters = JSON.parse(localStorage.getItem("propertyFilters")) || {};
 
-  const filteredProperties = properties.filter((property) => {
+  filteredProperties = properties.filter((property) => {
     const cleanPrice = Number(property.details.price.replace(/[$,]/g, ""));
     if (filters.price && cleanPrice > filters.price) return false;
 
