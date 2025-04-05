@@ -1,0 +1,216 @@
+[
+  {
+    "id": 1,
+    "image": {
+      "src": "/src/img/about-us-image-1.png"
+    },
+    "details": {
+      "title": "Luxury Home in San Francisco, CA",
+      "price": "$1,200",
+      "size": "3,000 Sq. Ft",
+      "location": "San Francisco, CA",
+      "amenities": ["Garden", "Smart Home", "Swimming Pool", "Garage"],
+      "features": [
+        { "value": "3", "unit": "Beds" },
+        { "value": "2", "unit": "Baths" }
+      ],
+      "type": "For Sale"
+    }
+  },
+  {
+    "id": 2,
+    "image": {
+      "src": "/src/img/about-us-image-2.png"
+    },
+    "details": {
+      "title": "Modern Apartment in New York, NY",
+      "price": "$850,000",
+      "size": "1,800 Sq. Ft",
+      "location": "New York, NY",
+      "amenities": ["Parking", "Gym", "Concierge Service", "Smart Home"],
+      "features": [
+        { "value": "2", "unit": "Beds" },
+        { "value": "2", "unit": "Baths" }
+      ],
+      "type": "For Sale"
+    }
+  },
+  {
+    "id": 3,
+    "image": {
+      "src": "/src/img/about-us-image-3.png"
+    },
+    "details": {
+      "title": "Spacious Villa in Los Angeles, CA",
+      "price": "$2,500",
+      "size": "4,500 Sq. Ft",
+      "location": "Los Angeles, CA",
+      "amenities": [
+        "Parking",
+        "Swimming Pool",
+        "Home Theater",
+        "Concierge Service"
+      ],
+      "features": [
+        { "value": "5", "unit": "Beds" },
+        { "value": "4", "unit": "Baths" }
+      ],
+      "type": "For Rent"
+    }
+  },
+  {
+    "id": 4,
+    "image": {
+      "src": "/src/img/about-us-image-4.png"
+    },
+    "details": {
+      "title": "Beachfront Condo in Miami, FL",
+      "price": "$1,800",
+      "size": "2,700 Sq. Ft",
+      "location": "Miami, FL",
+      "amenities": ["Concierge Service", "Garage", "Swimming Pool"],
+      "features": [
+        { "value": "3", "unit": "Beds" },
+        { "value": "3", "unit": "Baths" }
+      ],
+      "type": "For Sale"
+    }
+  },
+  {
+    "id": 5,
+    "image": {
+      "src": "./src/img/house-1.png"
+    },
+    "details": {
+      "title": "Classic Townhouse in Chicago, IL",
+      "price": "$950,000",
+      "size": "2,500 Sq. Ft",
+      "location": "Chicago, IL",
+      "amenities": ["Nearby Park", "Terrace", "Fireplace", "Basement"],
+      "features": [
+        { "value": "4", "unit": "Beds" },
+        { "value": "3", "unit": "Baths" }
+      ],
+      "type": "For Sale"
+    }
+  },
+  {
+    "id": 6,
+    "image": {
+      "src": "./src/img/image 23.png"
+    },
+    "details": {
+      "title": "Eco-Friendly Home in Austin, TX",
+      "price": "$750,000",
+      "size": "3,200 Sq. Ft",
+      "location": "Austin, TX",
+      "amenities": ["Rainwater Collection", "Garden", "Solar Panels"],
+      "features": [
+        { "value": "3", "unit": "Beds" },
+        { "value": "2", "unit": "Baths" }
+      ],
+      "type": "For Rent"
+    }
+  },
+  {
+    "id": 7,
+    "image": {
+      "src": "./src/img/card-image-7.jpeg"
+    },
+    "details": {
+      "title": "Rustic Cottage in Denver, CO",
+      "price": "$600,000",
+      "size": "2,000 Sq. Ft",
+      "location": "Denver, CO",
+      "amenities": ["Hiking Trails", "Large Deck", "Fire Pit", "Mountain View"],
+      "features": [
+        { "value": "2", "unit": "Beds" },
+        { "value": "1", "unit": "Bath" }
+      ],
+      "type": "For Sale"
+    }
+  },
+  {
+    "id": 8,
+    "image": {
+      "src": "./src/img/card-image-8.jpeg"
+    },
+    "details": {
+      "title": "Downtown Loft in Seattle, WA",
+      "price": "$1,100,000",
+      "size": "2,800 Sq. Ft",
+      "location": "Seattle, WA",
+      "amenities": [
+        "Art Galleries",
+        "Exposed Brick",
+        "High Ceilings",
+        "City View"
+      ],
+      "features": [
+        { "value": "2", "unit": "Beds" },
+        { "value": "2", "unit": "Baths" }
+      ],
+      "type": "For Rent"
+    }
+  },
+
+  {
+    "id": 11,
+    "image": {
+      "src": "./src/img/card-image-10.jpeg"
+    },
+    "details": {
+      "title": "Luxury Penthouse in Boston, MA",
+      "price": "$2,200,000",
+      "size": "4,000 Sq. Ft",
+      "location": "Boston, MA",
+      "amenities": [
+        "Terrace",
+        "Wine Cellar",
+        "Private Elevator",
+        "City Skyline View"
+      ],
+      "features": [
+        { "value": "4", "unit": "Beds" },
+        { "value": "4", "unit": "Baths" }
+      ],
+      "type": "For Sale"
+    }
+  },
+  {
+    "id": 12,
+    "image": {
+      "src": "./src/img/card-image-11.jpeg"
+    },
+    "details": {
+      "title": "Suburban Home in Atlanta, GA",
+      "price": "$700,000",
+      "size": "2,900 Sq. Ft",
+      "location": "Atlanta, GA",
+      "amenities": ["Garage", "Playground", "Community Pool", "Large Backyard"],
+      "features": [
+        { "value": "4", "unit": "Beds" },
+        { "value": "2", "unit": "Baths" }
+      ],
+      "type": "For Rent"
+    }
+  },
+  {
+    "id": 13,
+    "image": {
+      "src": "./src/img/card-image-12.jpeg"
+    },
+    "details": {
+      "title": "Historic Home in Philadelphia, PA",
+      "price": "$1,000,000",
+      "size": "3,300 Sq. Ft",
+      "location": "Philadelphia, PA",
+      "amenities": ["Patio", "Garden", "Fireplace", "Original Woodwork"],
+      "features": [
+        { "value": "3", "unit": "Beds" },
+        { "value": "3", "unit": "Baths" }
+      ],
+      "type": "For Sale"
+    }
+  }
+]

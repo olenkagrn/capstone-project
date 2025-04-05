@@ -1,0 +1,136 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+@use "../base/base";
+@use "../base/typography";
+
+.footer {
+  padding: 8rem 2rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4.2rem;
+  text-align: center;
+  border-top: variables.$white-solid-stroke;
+
+  @include mixins.respond(tab-port) {
+    grid-template-rows: repeat(min-content, 1fr);
+    gap: 3.2rem;
+  }
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include mixins.respond(tab-port) {
+    align-items: flex-start;
+    margin-bottom: 2.4rem;
+  }
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 2.4rem;
+
+  @include mixins.respond(tab-port) {
+    grid-row: 1/2;
+  }
+}
+
+.footer-logo-svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+}
+
+.footer-logo-text a {
+  color: variables.$white-default-color;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.footer-info p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+
+  @include mixins.respond(tab-port) {
+    font-size: 2rem;
+    text-align: start;
+    max-width: 60%;
+  }
+
+  @include mixins.respond(tab-port) {
+    max-width: 35%;
+  }
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  @include mixins.respond(tab-port) {
+    flex-direction: row;
+    align-items: flex-start;
+    grid-row: 2/3;
+  }
+}
+
+.footer-nav-column {
+  text-align: center;
+  margin-bottom: 3.2rem;
+
+  @include mixins.respond(tab-port) {
+    text-align: left;
+
+    &:last-child {
+      text-align: right;
+    }
+  }
+}
+
+.footer-nav-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.footer-nav-list {
+  list-style: none;
+}
+
+.footer-nav-list li {
+  margin-bottom: 1.6rem;
+}
+
+.footer-nav-list li a {
+  color: variables.$white-default-color;
+  text-decoration: none;
+  font-size: 1.8rem;
+  transition: color 0.3s ease;
+}
+
+.footer-nav address {
+  font-style: normal;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.footer-nav address p {
+  margin-bottom: 1.6rem;
+}
+
+.footer-copyright {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 1.2rem;
+
+  @include mixins.respond(tab-port) {
+    font-size: 2rem;
+    grid-row: 3/4;
+  }
+}

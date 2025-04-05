@@ -1,0 +1,26 @@
+{
+  "name": "capstone-project-template",
+  "version": "1.0.0",
+  "description": "Real Estate Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "sass src/sass:dist/css",
+    "watch": "sass --watch src/sass:dist/css",
+    "start": "npx serve",
+    "lint:js": "eslint src/js/*.js --fix",
+    "lint:css": "stylelint src/**/*.scss --fix",
+    "lint": "npm-run-all --parallel lint:js lint:css"
+  },
+  "author": "Olena Hrynko",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.23.0",
+    "eslint": "^9.23.0",
+    "globals": "^16.0.0",
+    "sass": "^1.86.2",
+    "stylelint": "^16.17.0",
+    "stylelint-config-standard": "^37.0.0",
+    "stylelint-config-standard-scss": "^14.0.0"
+  }
+}

@@ -1,0 +1,75 @@
+<div class="filter-panel">
+  <div class="filter-panel__title-block">
+    <h2 class="filter-panel__title">Filter Properties</h2>
+    <span id="closeBtn" class="filter-panel__close-btn">&times;</span>
+  </div>
+  <form id="filter-form" class="filter-panel__form">
+    <div class="filter-panel__group">
+      <label for="price" class="filter-panel__label">Max Price:</label>
+      <input
+        type="number"
+        id="price"
+        name="price"
+        placeholder="Enter max price"
+        class="filter-panel__input"
+      />
+    </div>
+
+    <div class="filter-panel__group">
+      <label for="bedrooms" class="filter-panel__label">Bedrooms:</label>
+      <select
+        id="bedrooms"
+        name="bedrooms"
+        class="filter-panel__select"
+      ></select>
+    </div>
+
+    <div class="filter-panel__group">
+      <label for="bathrooms" class="filter-panel__label">Bathrooms:</label>
+      <select
+        id="bathrooms"
+        name="bathrooms"
+        class="filter-panel__select"
+      ></select>
+    </div>
+
+    <div class="filter-panel__group">
+      <label for="type" class="filter-panel__label">Property Type:</label>
+      <select id="type" name="type" class="filter-panel__select"></select>
+    </div>
+
+    <div class="filter-panel__group">
+      <label for="location" class="filter-panel__label">Location:</label>
+      <select
+        id="location"
+        name="location"
+        class="filter-panel__select"
+      ></select>
+    </div>
+
+    <div class="filter-panel__group">
+      <label for="sortCriteria" class="filter-panel__label">Sort By:</label>
+      <select
+        id="sortCriteria"
+        name="sortCriteria"
+        class="filter-panel__select"
+      ></select>
+    </div>
+
+    <div class="filter-panel__group">
+      <label for="sortDirection" class="filter-panel__label">Direction:</label>
+      <select
+        id="sortDirection"
+        name="sortDirection"
+        class="filter-panel__select"
+      ></select>
+    </div>
+
+    <div class="filter-panel__group">
+      <label class="filter-panel__label">Amenities:</label>
+      <div class="filter-panel__checkbox-group"></div>
+    </div>
+
+    <button type="submit" class="filter-panel__btn">Apply Filters</button>
+  </form>
+</div>

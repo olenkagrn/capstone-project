@@ -1,0 +1,229 @@
+@use "../base/typography";
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.header-section-container {
+  background-image: linear-gradient(rgb(0 0 0 / 60%), rgb(0 0 0 / 60%)),
+    url("/src/img/contact-hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 50vh;
+  padding: 2rem;
+
+  @include mixins.respond(tab-port) {
+    height: 70vh;
+  }
+}
+
+.contacts-hero {
+  @include mixins.abs-center;
+
+  line-height: 1.2;
+
+  @include mixins.respond(tab-port) {
+    text-align: end;
+  }
+
+  &__title {
+    font-size: 5.6rem;
+  }
+
+  &__subtitle {
+    font-size: 3.2rem;
+
+    @include mixins.respond(tab-port) {
+      margin-right: -8rem;
+    }
+  }
+}
+
+.contact-us {
+  background-color: variables.$dark-default-color;
+  color: variables.$white-default-color;
+  padding: 8rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  &__container {
+    gap: 3rem;
+    margin-bottom: 8rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+  }
+
+  &__title {
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-weight: 500;
+    color: variables.$accent-color;
+    text-transform: uppercase;
+
+    @include mixins.respond(tab-port) {
+      grid-column: -1/1;
+      font-size: 4.2rem;
+      margin-bottom: 6.4rem;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 3rem;
+    font-size: 1.6rem;
+
+    @media screen and (width >= 450px) {
+      flex-direction: row;
+      grid-column: -1/1;
+      grid-row: 2/3;
+    }
+  }
+
+  &__info-item {
+    text-align: center;
+    color: variables.$accent-color;
+    font-weight: 300;
+    line-height: 1.6;
+    padding: 2rem 0;
+
+    @include mixins.respond(phone) {
+      padding: 3.2rem;
+
+      &:nth-child(2) {
+        border-right: variables.$accent-solid-stroke;
+        border-left: variables.$accent-solid-stroke;
+      }
+    }
+
+    @include mixins.respond(tab-port) {
+      padding: auto;
+      width: 100%;
+      margin-bottom: 5.6rem;
+    }
+
+    svg {
+      margin-bottom: 0.8rem;
+    }
+
+    h3 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+      color: variables.$white-default-color;
+      margin-bottom: 0.8rem;
+    }
+
+    @include mixins.respond(tab-land) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__message {
+    text-align: center;
+    line-height: 1.6;
+
+    @include mixins.respond(phone) {
+      flex-direction: row;
+      grid-column: 1/-1;
+      grid-row: 3/4;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin: 0.8rem 0;
+
+      @include mixins.respond(tab-land) {
+        font-size: 2rem;
+        margin-bottom: 3.2rem;
+      }
+    }
+  }
+
+  &__form-map-block {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    grid-column: 1/2;
+    grid-row: 4/5;
+    border-radius: 2rem;
+    overflow: hidden;
+    height: 50%;
+
+    @media screen and (width >= 450px) {
+      flex-direction: row;
+      gap: 0;
+    }
+  }
+
+  &__form {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    transition: all ease-in-out 0.3s;
+
+    @include mixins.respond(tab-port) {
+      max-width: 30rem;
+
+      &:hover {
+        max-width: 100%;
+      }
+    }
+  }
+
+  &__form-group {
+    margin-bottom: 2rem;
+  }
+
+  &__form-label {
+    display: block;
+    margin-bottom: 0.8rem;
+  }
+
+  &__form-input,
+  &__form-textarea {
+    width: 100%;
+    padding: 1rem;
+    border: variables.$light-solid-stroke;
+    background-color: variables.$form-bg-color;
+    color: variables.$white-default-color;
+    border-radius: 0.4rem;
+  }
+
+  &__form-textarea {
+    height: 15rem;
+  }
+
+  &__form-button {
+    background-color: variables.$accent-color;
+    color: variables.$white-default-color;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin: 2rem auto 0;
+
+    &:hover,
+    &:active {
+      background-color: variables.$active-btn-color;
+    }
+  }
+}
+
+#map {
+  width: 100%;
+  grid-row: 4/5;
+  height: 100%;
+
+  @include mixins.respond(phone) {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+}

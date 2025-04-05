@@ -1,0 +1,86 @@
+@use "../abstracts/variables";
+@use "../base/base";
+@use "../base/typography";
+@use "../abstracts/mixins";
+
+.header {
+  border-bottom: variables.$white-solid-stroke;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.4rem 2rem;
+
+  @include mixins.respond(tab-land) {
+    display: flex;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: end;
+    gap: 0.8rem;
+    cursor: pointer;
+
+    &-svg {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+
+    &-text > a {
+      font-size: 1.8rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  &__nav {
+    &-list {
+      display: flex;
+      gap: 5.6rem;
+      align-items: center;
+
+      &-item {
+        list-style: none;
+
+        a {
+          text-decoration: none;
+          color: variables.$white-default-color;
+          font-size: 1.6rem;
+          transition: color 0.3s ease;
+          position: relative;
+
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            height: 2px;
+            width: 100%;
+            background-color: variables.$accent-color;
+            transition: transform 0.3s ease-in-out;
+            transform: scaleX(0);
+          }
+
+          &:hover::before {
+            transform: scaleX(1);
+          }
+        }
+      }
+    }
+  }
+
+  &__btn {
+    @include mixins.button-styles;
+
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    transition: background-color 0.3s ease;
+    border: variables.$white-solid-stroke;
+    color: variables.$white-default-color;
+
+    &:hover {
+      background-color: variables.$white-default-color;
+      color: variables.$accent-color;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  color: variables.$white-default-color;
+  background-color: variables.$dark-default-color;
+}
+
+.btn {
+  &:link,
+  &:visited {
+    @include mixins.button-styles;
+
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    color: inherit;
+    line-height: 1.5;
+    cursor: pointer;
+  }
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}

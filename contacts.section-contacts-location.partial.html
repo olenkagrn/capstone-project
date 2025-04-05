@@ -1,0 +1,137 @@
+<section class="contact-us container">
+  <div class="contact-us__container">
+    <h2 class="contact-us__title"><i>Get in touch with us!</i></h2>
+    <div class="contact-us__info">
+      <div class="contact-us__info-item">
+        <svg
+          class="contacts-us__info-item-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2m10 5l5-5m-5 1v4h4"
+          />
+        </svg>
+        <h3 class="contact-us__info-title">PHONE</h3>
+        <p class="contact-us__info-text">Phone +63 916 630 121</p>
+        <p class="contact-us__info-text">Phone +63 72 432 121</p>
+      </div>
+      <div class="contact-us__info-item">
+        <svg
+          class="contacts-us__info-item-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <g
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+          >
+            <path
+              d="M12.56 20.82a.96.96 0 0 1-1.12 0C6.611 17.378 1.486 10.298 6.667 5.182A7.6 7.6 0 0 1 12 3c2 0 3.919.785 5.333 2.181c5.181 5.116.056 12.196-4.773 15.64"
+            />
+            <path d="M12 12a2 2 0 1 0 0-4a2 2 0 0 0 0 4" />
+          </g>
+        </svg>
+        <h3 class="contact-us__info-title">ADDRESS</h3>
+        <p class="contact-us__info-text">
+          5 Grens Field Tandang Sora, Quezon City
+        </p>
+        <p class="contact-us__info-text">Metro Manila, Philippines</p>
+      </div>
+      <div class="contact-us__info-item">
+        <svg
+          class="contacts-us__info-item-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="currentColor"
+            d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2zm-2 0l-8 5l-8-5zm0 12H4V8l8 5l8-5z"
+          />
+        </svg>
+        <h3 class="contact-us__info-title">EMAIL</h3>
+        <p class="contact-us__info-text">support@legendevents.com</p>
+        <p class="contact-us__info-text">sales@legendevents.com</p>
+      </div>
+    </div>
+    <div class="contact-us__message">
+      <p class="contact-us__message-text">
+        IF YOU GOT ANY QUESTIONS <br />
+        PLEASE DO NOT HESITATE TO SEND US A MESSAGE.
+      </p>
+    </div>
+    <div class="contact-us__form-map-block">
+      <form class="contact-us__form">
+        <div class="contact-us__form-group">
+          <label for="name" class="contact-us__form-label">Your Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter Your Name"
+            class="contact-us__form-input"
+          />
+        </div>
+        <div class="contact-us__form-group">
+          <label for="email" class="contact-us__form-label">Your Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter Your Email"
+            name="email"
+            class="contact-us__form-input"
+          />
+        </div>
+
+        <div class="contact-us__form-group">
+          <label for="message" class="contact-us__form-label">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            class="contact-us__form-textarea"
+          ></textarea>
+        </div>
+        <button type="submit" class="contact-us__form-button">
+          SEND MESSAGE
+        </button>
+      </form>
+      <div id="map"></div>
+    </div>
+  </div>
+</section>
+
+<script>
+  function initMap() {
+    const myLatLng = { lat: 49.8397, lng: 24.0297 };
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 12,
+      center: myLatLng,
+    });
+
+    new google.maps.Marker({
+      position: myLatLng,
+      map,
+      title: "Our Location",
+    });
+  }
+</script>
+
+<script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPSB-WWWmvT4HZd15aNtViWTde0mMzPPQ&callback=initMap"
+  async
+  defer
+></script>
